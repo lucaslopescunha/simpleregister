@@ -2,11 +2,11 @@
   "bridge": {
     "managed": false,
     "path": "AGENTS.md",
-    "sha256": "e2c8788f11100536b50ccb459e2b7b23fca1b3782fb1a8aff94619bb306421d5"
+    "sha256": "7f100f7d6965717df02ff8d9674e96fe3c953f2a502457890fe2009fb6aab8ea"
   },
   "files": {
     "WORKSPACE.md": {
-      "installed_sha256": "34d99a85f74e6dc43503c5381481882a3064f848309dd9987695b7227fcaf4c0",
+      "installed_sha256": "6f24e5aa0c79c7e25c0bc05e4ad0c0b7178b6da1140738cbbdf3fdde24083703",
       "source_sha256": "34d99a85f74e6dc43503c5381481882a3064f848309dd9987695b7227fcaf4c0"
     },
     "config.json": {

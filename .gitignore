@@ -8,3 +8,7 @@
 .discovery/
 projects/
 daily/
+
+# Python virtual environments
+.venv/
+venv/
