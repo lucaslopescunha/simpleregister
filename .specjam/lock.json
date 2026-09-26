@@ -1,0 +1,88 @@
+{
+  "bridge": {
+    "managed": false,
+    "path": "AGENTS.md",
+    "sha256": "e2c8788f11100536b50ccb459e2b7b23fca1b3782fb1a8aff94619bb306421d5"
+  },
+  "files": {
+    "WORKSPACE.md": {
+      "installed_sha256": "34d99a85f74e6dc43503c5381481882a3064f848309dd9987695b7227fcaf4c0",
+      "source_sha256": "34d99a85f74e6dc43503c5381481882a3064f848309dd9987695b7227fcaf4c0"
+    },
+    "config.json": {
+      "installed_sha256": "947bd1e18918a22519ee1edce38673c90cb4667c86b9cda3d4d88040d80ad8c3",
+      "source_sha256": "947bd1e18918a22519ee1edce38673c90cb4667c86b9cda3d4d88040d80ad8c3"
+    },
+    "graphs/delivery-graph.json": {
+      "installed_sha256": "7fe373fc757e665fb8eb0dd9211d63d48273653ded1a0fcc0aaf3c8610b27627",
+      "source_sha256": "7fe373fc757e665fb8eb0dd9211d63d48273653ded1a0fcc0aaf3c8610b27627"
+    },
+    "graphs/discovery-graph.json": {
+      "installed_sha256": "a8e23efd5b4609145ee9492ec71a69f3c1212da4385b718075f58547540685c6",
+      "source_sha256": "a8e23efd5b4609145ee9492ec71a69f3c1212da4385b718075f58547540685c6"
+    },
+    "graphs/postmortem-graph.json": {
+      "installed_sha256": "936e893eb066d0fa646035e22a7bb526d3817d8172c00c0e8c7751bb626d3a93",
+      "source_sha256": "936e893eb066d0fa646035e22a7bb526d3817d8172c00c0e8c7751bb626d3a93"
+    },
+    "references/RWSA.md": {
+      "installed_sha256": "497f31ebfb509ee38c6144353ba1d959105ffe3ec34aae9acdd4c8b037198c63",
+      "source_sha256": "497f31ebfb509ee38c6144353ba1d959105ffe3ec34aae9acdd4c8b037198c63"
+    },
+    "runtime/capability-matrix.md": {
+      "installed_sha256": "d9d7509b374a63f2d39114fa5076d35986967bf67592b38e52329601f877e194",
+      "source_sha256": "d9d7509b374a63f2d39114fa5076d35986967bf67592b38e52329601f877e194"
+    },
+    "skills/specjam-bounded-review/SKILL.md": {
+      "installed_sha256": "2a344eb30d609393f343f78839b9462f708443d8c966d85052123c0fa0314d29",
+      "source_sha256": "2a344eb30d609393f343f78839b9462f708443d8c966d85052123c0fa0314d29"
+    },
+    "skills/specjam-bounded-review/rws.json": {
+      "installed_sha256": "05d19c0f7ab81eb4bed27e09c56f43cf324ce2b8e830b0deb397982d1a5ef9eb",
+      "source_sha256": "05d19c0f7ab81eb4bed27e09c56f43cf324ce2b8e830b0deb397982d1a5ef9eb"
+    },
+    "skills/specjam-daily-loop/SKILL.md": {
+      "installed_sha256": "56765fd72d695ee155c786366a1622a30ad57c785c9d7c5703c79358261697f8",
+      "source_sha256": "56765fd72d695ee155c786366a1622a30ad57c785c9d7c5703c79358261697f8"
+    },
+    "skills/specjam-daily-loop/rws.json": {
+      "installed_sha256": "55a15c6bc0d19289b6372d74cb589ccbcb93f80d5b3b4701f82bb2ebb8ed77d2",
+      "source_sha256": "55a15c6bc0d19289b6372d74cb589ccbcb93f80d5b3b4701f82bb2ebb8ed77d2"
+    },
+    "skills/specjam-flow/SKILL.md": {
+      "installed_sha256": "7b190efaf434f8d620629570b8542a437cd8d3839eaeed37b16bd82a6fbe6144",
+      "source_sha256": "7b190efaf434f8d620629570b8542a437cd8d3839eaeed37b16bd82a6fbe6144"
+    },
+    "skills/specjam-flow/rws.json": {
+      "installed_sha256": "f49f7a881514a4ff6789420574d8581629512bbf075dd69f13ce3e7229610be3",
+      "source_sha256": "f49f7a881514a4ff6789420574d8581629512bbf075dd69f13ce3e7229610be3"
+    },
+    "skills/specjam-skill-authoring/SKILL.md": {
+      "installed_sha256": "ce38b606739c7190ba11be1c57de11d792ab57ce04ffa79d9eb696d0669a896c",
+      "source_sha256": "ce38b606739c7190ba11be1c57de11d792ab57ce04ffa79d9eb696d0669a896c"
+    },
+    "skills/specjam-skill-authoring/references/RWSA.md": {
+      "installed_sha256": "a27263a915c21d1525e89a5dd0f4fe2618efcc2383bb4369040edd03b948240f",
+      "source_sha256": "a27263a915c21d1525e89a5dd0f4fe2618efcc2383bb4369040edd03b948240f"
+    },
+    "skills/specjam-skill-authoring/rws.json": {
+      "installed_sha256": "8722bb2637b333948779772360c453de541b75ea4c2bf078ac1d30bdd2a21afb",
+      "source_sha256": "8722bb2637b333948779772360c453de541b75ea4c2bf078ac1d30bdd2a21afb"
+    },
+    "skills/specjam-trace-to-skill/SKILL.md": {
+      "installed_sha256": "dad34d039bcfffe869a6a8f3df3057d9ab8784cd1f84fd76bac2f16a0cda9fa7",
+      "source_sha256": "dad34d039bcfffe869a6a8f3df3057d9ab8784cd1f84fd76bac2f16a0cda9fa7"
+    },
+    "skills/specjam-trace-to-skill/references/RWSA.md": {
+      "installed_sha256": "f53403e78711fb6ba6da48da89fabfb05079da2955164ed05503a2bbdb482502",
+      "source_sha256": "f53403e78711fb6ba6da48da89fabfb05079da2955164ed05503a2bbdb482502"
+    },
+    "skills/specjam-trace-to-skill/rws.json": {
+      "installed_sha256": "7ebef03479659e6201e1a071d4e00c5ed02c3de40de6dd4ba3dc7918acb0fa3f",
+      "source_sha256": "7ebef03479659e6201e1a071d4e00c5ed02c3de40de6dd4ba3dc7918acb0fa3f"
+    }
+  },
+  "managed_root": ".specjam",
+  "schema": 1,
+  "specjam_version": "0.5.0"
+}

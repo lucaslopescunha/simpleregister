@@ -1,0 +1,10 @@
+
+# SpecJam local runtime state
+.specjam/state/
+.specjam/runs/
+.specjam/daily/
+.specjam/memory/
+.specjam/cache/
+.discovery/
+projects/
+daily/

@@ -1,0 +1,77 @@
+{
+  "graph": "delivery",
+  "version": "0.2.0",
+  "start": "context",
+  "terminal": "done",
+  "nodes": {
+    "context": {
+      "agent": "context-agent",
+      "required_artifacts": ["01-context.md"],
+      "next": "spec",
+      "implementation_blocked": true,
+      "blocking_reason": "SPEC is not ready"
+    },
+    "spec": {
+      "agent": "spec-agent",
+      "required_artifacts": ["02-spec.md"],
+      "subagents": [
+        {"role": "domain", "agent": "specjam-domain-reviewer", "read_only": true},
+        {"role": "architecture", "agent": "specjam-architecture-reviewer", "read_only": true},
+        {"role": "security", "agent": "specjam-security-reviewer", "read_only": true},
+        {"role": "observability", "agent": "specjam-observability-reviewer", "read_only": true},
+        {"role": "tests", "agent": "specjam-test-reviewer", "read_only": true}
+      ],
+      "next": {
+        "when": "design_required",
+        "true": "design",
+        "false": "build"
+      },
+      "implementation_blocked": true,
+      "blocking_reason": "Design is not complete"
+    },
+    "design": {
+      "agent": "design-agent",
+      "required_artifacts": ["03-design.md"],
+      "next": "build",
+      "implementation_blocked": true,
+      "blocking_reason": "Build is not complete"
+    },
+    "build": {
+      "agent": "implementation-agent",
+      "required_artifacts": ["04-build.md"],
+      "session_policy": {"strategy": "new_per_increment", "harness": "default", "max_retries": 2},
+      "metadata": {
+        "skill_policy": {
+          "mode": "task-aware",
+          "max_skills": 3,
+          "candidates": [
+            "ligeiro-mindware/learning-domain-driven-design@latest",
+            "ligeiro-mindware/kafka-definitive-guide@latest",
+            "ligeiro-mindware/observability-engineering@latest",
+            "ligeiro-mindware/optimizing-cloud-native-java@latest",
+            "ligeiro-mindware/spring-data@latest"
+          ],
+          "fallback": ["ligeiro-mindware/learning-domain-driven-design@latest"]
+        }
+      },
+      "next": "validate",
+      "implementation_blocked": false,
+      "blocking_reason": ""
+    },
+    "validate": {
+      "agent": "validation-agent",
+      "required_artifacts": ["05-validate.md"],
+      "session_policy": {"strategy": "isolated", "harness": "default", "read_only": true, "max_retries": 1},
+      "next": "done",
+      "implementation_blocked": false,
+      "blocking_reason": ""
+    },
+    "done": {
+      "agent": "none",
+      "required_artifacts": [],
+      "next": "done",
+      "implementation_blocked": false,
+      "blocking_reason": ""
+    }
+  }
+}
