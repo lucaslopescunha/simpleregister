@@ -2,6 +2,11 @@
 
 SpecJam is a harness-neutral engineering method. Use natural language at the entry point, but make stage transitions deterministic and durable.
 
+## Project constitution
+
+- Java 21 is mandatory for this workspace.
+- Spring Boot versions must be newer than 4.0.x (4.1.0 or later).
+
 ## Operating contract
 
 - Select a graph: `discovery`, `delivery`, or `postmortem`.
